@@ -1,0 +1,34 @@
+<html>
+<head>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+</head>
+<style>
+*{margin:0;padding:0}
+.islider-box ul{
+	height:213px;
+	width:3000px;
+}
+.islider-box ul li{
+	display:inline-block;
+	list-style: none;
+	border:0
+}
+.islider-box img{width:414}
+</style>
+<body>
+	<section id="isldier" class="islider-box">
+		<ul>
+			<li><img src="http://res.360zfw.com/upload/carousel/20160401/56fde80c184e8.jpg"></li><li><img src="http://res.360zfw.com/upload/carousel/20160516/573971f6c71d6.jpg">
+			</li><li><img src="http://res.360zfw.com/upload/carousel/20160518/573c1ae5e2f15.png"></li>
+		</ul>
+	</section>
+</body>
+<script src="tinySlider.js"></script>
+<script>
+	var slider = new TinySlider({selector:"#isldier"});
+</script>
+</html>
