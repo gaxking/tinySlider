@@ -16,4 +16,4 @@ duration:param.duration || 300 动画时间，默认0.3秒
 addDot:param.addDot || true 是否加导航点  
 isCustom:param.isCustom || false 是否自定义DOM
 
-[运行DEMO](http://www.luoyongjie.cn/mygit/tinySlider)
+[运行DEMO](http://www.luoyongjie.cn/mygit/tinySlider)(请用手机模式查看)
