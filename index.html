@@ -1,4 +1,4 @@
-<html>
+<html style="font-size: 110.4px;">
 <head>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -8,27 +8,29 @@
 </head>
 <style>
 *{margin:0;padding:0}
-.islider-box ul{
+.islider-box{
+	overflow:hidden;
 	height:213px;
-	width:3000px;
 }
-.islider-box ul li{
-	display:inline-block;
-	list-style: none;
-	border:0
-}
-.islider-box img{width:414}
 </style>
 <body>
 	<section id="isldier" class="islider-box">
-		<ul>
-			<li><img src="http://res.360zfw.com/upload/carousel/20160401/56fde80c184e8.jpg"></li><li><img src="http://res.360zfw.com/upload/carousel/20160516/573971f6c71d6.jpg">
-			</li><li><img src="http://res.360zfw.com/upload/carousel/20160518/573c1ae5e2f15.png"></li>
-		</ul>
 	</section>
 </body>
 <script src="tinySlider.js"></script>
 <script>
-	var slider = new TinySlider({selector:"#isldier"});
+	var slider = new TinySlider({
+			selector:"#isldier",
+			list:['http://res.360zfw.com/upload/carousel/20160401/56fde80c184e8.jpg','http://res.360zfw.com/upload/carousel/20160516/573971f6c71d6.jpg','http://res.360zfw.com/upload/carousel/20160518/573c1ae5e2f15.png']
+		});
+
+
+/*	自定义dom模式
+	var slider = new TinySlider({
+			selector:"#isldier",
+			isCustom:true,
+			list:['<img style="width:100%;height:100%;" src="http://res.360zfw.com/upload/carousel/20160401/56fde80c184e8.jpg" />','<img style="width:100%;height:100%;" src="http://res.360zfw.com/upload/carousel/20160516/573971f6c71d6.jpg" />','<img style="width:100%;height:100%;" src="http://res.360zfw.com/upload/carousel/20160518/573c1ae5e2f15.png" />']
+		});
+*/
 </script>
 </html>
