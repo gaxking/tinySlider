@@ -9,7 +9,7 @@ new TinySlider({
 });
 
 ### 可选参数
-isCustom:是否自定义
+isCustom:是否自定义  
 selector:插件选择字符串
 list: 图片URL或者DOM
 stay:param.stay || 2000 停留事件，默认2秒
