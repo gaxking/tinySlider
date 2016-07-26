@@ -1,4 +1,4 @@
-;(function(w){
+;(function(w) {
 	//兼容处理
 	var	transName=(function() {
 		var transEndEventNames = {
@@ -175,14 +175,6 @@
 
 		//运行心跳定时器
 		this.Events['heartTimer']();
-	};
-
-	//销毁插件
-	TinySlider.prototype.destroy = function() {
-		this.options.dom.removeEventListener('touchstart', this.Events['touchstart']);
-		this.options.dom.removeEventListener('touchmove', this.Events['touchmove']);
-		this.options.dom.removeEventListener('touchend', this.Events['touchend']);
-		clearTimeout(this.heartTimer);
 	};
 
 	//销毁插件
